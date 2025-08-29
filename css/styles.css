@@ -5,7 +5,7 @@ body {
     grid-template-rows: 1fr 1fr 3fr 1fr 1fr; 
     row-gap: 10px;
     color: white; 
-    font-size: 2rem;
+    font-size: 3rem;
     font-family: 'Courier New', Courier, monospace;
     max-width: 100vw;
     max-height: 100vh; 
@@ -15,10 +15,15 @@ body {
 
 }
 
+.container {
+    border-radius: 5px;
+}
+
 header {
     background-color: purple;
     grid-column: 2;
     grid-row: 1;
+    margin-top: 5vh;
 }
 
 #aside1 {
@@ -35,7 +40,7 @@ main {
 
     main > .column {
     background-color: red;
-    font-size: 1.5rem; 
+    font-size: 2rem; 
     }
 
 #aside2 {
@@ -48,4 +53,5 @@ footer {
     background-color: darkorange; 
 grid-column: 2;
 grid-row: 7; 
+margin-bottom:5vh; 
 }

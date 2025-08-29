@@ -1,0 +1,51 @@
+body {
+    display: grid; 
+    background-color: silver;
+    grid-template-columns: 1fr 500px 1fr;
+    grid-template-rows: 1fr 1fr 3fr 1fr 1fr; 
+    row-gap: 10px;
+    color: white; 
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    max-width: 100vw;
+    max-height: 100vh; 
+    align-content:space-around;
+    text-align: center;
+    font-weight: 700;
+
+}
+
+header {
+    background-color: purple;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#aside1 {
+    background-color: navy;
+grid-column: 2;
+grid-row: 2;
+}
+
+main {
+    background-color: green;
+   grid-column: 2;
+   grid-row: 3 / span 3;
+}
+
+    main > .column {
+    background-color: red;
+    font-size: 1.5rem; 
+    }
+
+#aside2 {
+    background-color: blue;
+grid-column: 2;
+grid-row: 6;
+}
+
+footer {
+    background-color: darkorange; 
+grid-column: 2;
+grid-row: 7; 
+}
